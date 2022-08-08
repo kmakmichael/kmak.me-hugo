@@ -1,7 +1,6 @@
 baseURL = 'http://kmak.me/'
 languageCode = 'en-us'
 title = 'Michael Kmak'
-theme = 'tektronix'
 
 disableKinds = ["sitemap", "RSS", "robotsTXT", "taxonomy", "term"]
 disableHugoGeneratorInject = true
