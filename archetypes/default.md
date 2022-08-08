@@ -1,6 +1,5 @@
 ---
 title: ""
 description: ""
-date: {{ .Date }}
 ---
 

@@ -38,8 +38,9 @@ div {
 	padding-right: 8px;
 }
 
-h1, h2, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6, h7 {
 	font-weight: normal;
+	margin: 0;
 }
 
 a:hover {
@@ -51,8 +52,8 @@ a {
 	text-decoration: none;
 }
 
-p {
-	font-size: 14pt;
+p, ul, li {
+	font-size: 13pt;
 }
 
 hr {
@@ -130,6 +131,12 @@ ul.tree li.short:before {
 
 .content {
 	flex: 1 0 auto;
-	padding-left: 24px;
-	padding-right: 24px;
+	padding: 24px;
+}
+
+div.title {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
 }
