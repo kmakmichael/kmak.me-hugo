@@ -1,0 +1,130 @@
+:root {
+	--tek: #09F477;
+	--glow: #07C661;
+	--bg: #1e241e;
+}
+
+@font-face {
+	font-family: 'bodyfont'; /* DEC Terminal Modern */
+	src: url('/font/decterm.ttf');
+}
+@font-face {
+	font-family: 'logofont';
+	src: url('/font/libby.woff2'); /* Libertinus Serif Display */
+}
+
+* {
+	font-family: 'bodyfont';
+	letter-spacing: 0.75px;
+	text-shadow: 0px 0px 18px var(--glow);
+	color: var(--tek);
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+	font-weight: normal;
+}
+
+html {
+	scrollbar-width: none;
+	background: var(--bg);
+}
+
+body {
+	min-height: 80vh;
+	min-width: 74vw;
+	margin-right: 12%;
+	margin-left: 12%;
+	margin-top: 4%;
+}
+
+div {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+p {
+	font-size: 14pt;
+}
+
+hr {
+	border-top: 1.25px solid var(--tek);
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+	box-shadow: 0px 0px 9px 0px var(--glow) inset, 0px 0px 9px 0px var(--glow);
+}
+
+.flexxy {
+	display: flex;
+	gap: 24px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: nowrap;
+}
+
+.box {
+	border: 1.25px solid var(--tek);
+	border-radius: 2.5px;
+	box-shadow: 0px 0px 9px 0px var(--glow) inset, 0px 0px 9px 0px var(--glow);
+}
+
+
+/**** Navbar ****/
+
+.navbar {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: baseline;
+	flex-wrap: nowrap;
+}
+
+
+/**** Logo ****/
+div.logo {
+	padding-top: 8px;
+	/* padding: 24px; */
+}
+
+div.logo a {
+	font-family: 'logofont';
+	font-style: italic;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-shadow: 0px 0px 18px var(--glow) inset;
+	font-size: 44px;
+	padding-right: 4px;
+}
+
+
+/**** Tree ****/
+
+ul.tree {
+	padding: 0;
+	line-height: 100%;
+	list-style: none;
+	font-size: 14pt;
+}
+
+ul.tree a {
+	text-decoration: none;
+}
+
+ul.tree li:before {
+	content: "├ ";
+}
+
+ul.tree li.short:before {
+	content: "└ ";
+}
+
+
+/**** Content ****/
+
+.content {
+	flex: 1 0 auto;
+	padding-left: 24px;
+	padding-right: 24px;
+}

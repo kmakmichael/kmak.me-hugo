@@ -4,18 +4,13 @@
 name = "Tektronix"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Modelled after the nice greeny aesthetic of Tektronix graphics displays."
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Michael Kmak"
+  homepage = "https://kmak.me/"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
