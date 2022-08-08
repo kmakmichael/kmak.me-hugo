@@ -20,10 +20,6 @@
 	color: var(--tek);
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
-	font-weight: normal;
-}
-
 html {
 	scrollbar-width: none;
 	background: var(--bg);
@@ -40,6 +36,19 @@ body {
 div {
 	padding-left: 8px;
 	padding-right: 8px;
+}
+
+h1, h2, h4, h5, h6, h7 {
+	font-weight: normal;
+}
+
+a:hover {
+	background-color: var(--tek);
+	color: var(--bg);
+}
+
+a {
+	text-decoration: none;
 }
 
 p {
@@ -106,10 +115,6 @@ ul.tree {
 	line-height: 100%;
 	list-style: none;
 	font-size: 14pt;
-}
-
-ul.tree a {
-	text-decoration: none;
 }
 
 ul.tree li:before {
