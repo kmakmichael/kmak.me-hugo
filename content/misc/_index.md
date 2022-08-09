@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "misc"
 description: ""
 depth: 1
 ---

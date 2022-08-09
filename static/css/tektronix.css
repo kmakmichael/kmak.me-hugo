@@ -111,13 +111,18 @@ div.logo a {
 
 /**** Tree ****/
 
+p.tree {
+	line-height: 100%;
+	margin: 0;
+}
+
 ul.tree {
 	padding: 0;
 	line-height: 100%;
 	list-style: none;
-	font-size: 14pt;
 }
 
+/*
 ul.tree li:before {
 	content: "├ ";
 }
@@ -125,6 +130,7 @@ ul.tree li:before {
 ul.tree li.short:before {
 	content: "└ ";
 }
+*/
 
 
 /**** Content ****/
