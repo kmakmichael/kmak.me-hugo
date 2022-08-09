@@ -120,6 +120,11 @@ ul.tree {
 	line-height: 100%;
 	list-style: none;
 }
+ul.tree li{
+	margin: 0;
+	line-height: 100%;
+	list-style: none;
+}
 
 
 /**** Content ****/
@@ -129,10 +134,17 @@ ul.tree {
 	padding: 24px;
 }
 
-div.title {
+div.header {
 	display: flex;
-	gap: 20vw;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: flex-end;
+}
+
+div.title {
+	flex: 1 1 50%;
+}
+
+div.subtitle {
+	flex: 1 1 50%;
 }
