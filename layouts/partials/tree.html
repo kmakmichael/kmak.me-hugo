@@ -1,23 +1,22 @@
 <div class="tree">
-	{{ $.Scratch.Set "idx" 1}}
+	{{- $.Scratch.Set "idx" 1 -}}
 	<ul class="tree"><a href="/">home</a>
-	{{ range .Site.Sections }}
+	{{- range .Site.Sections }}
 		<li>
-			{{ strings.Repeat (sub .Params.depth 1) "┃ " }}
-			{{ if eq ($.Scratch.Get "idx") (len $.Site.Sections) }}
-				└
-			{{ else }}
-				├
-			{{ end }}
-			<a href={{.Permalink}}> {{ lower .Title }}</a>	
-		</li>
-		{{if eq . $.Parent}}
+			{{- strings.Repeat (sub .Params.depth 1) "┃ " -}}
+			{{- if eq ($.Scratch.Get "idx") (len $.Site.Sections) -}}
+				{{- print "└ " -}}
+			{{- else -}}
+				{{- print "├ " -}}
+			{{- end -}}
+			<a href={{.Permalink}}>{{ lower .Title }}</a></li>
+		{{- if eq . $.Parent }}
 		<li>
-			{{ strings.Repeat .Params.depth "│ " }}
-			<a href={{$.Permalink}}>└ {{ lower $.Title }}</a>
-		</li>
-			{{ end }}
-		{{ $.Scratch.Set "idx" (add 1 ($.Scratch.Get "idx"))}}
-	{{ end }}
+			{{- strings.Repeat .Params.depth "│ " -}}
+			{{- print "└ " -}}
+			<a href={{$.Permalink}}>{{ lower $.Title }}</a></li>
+		{{- end -}}
+		{{- $.Scratch.Set "idx" (add 1 ($.Scratch.Get "idx")) -}}
+	{{- end }}
 	</ul>
 </div>
