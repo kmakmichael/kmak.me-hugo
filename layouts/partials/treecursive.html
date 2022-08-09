@@ -8,26 +8,20 @@
 {{- /**** 0 children (content page) ****/ -}}
 {{- if eq (len $children) 0 -}}
 	{{- if eq $pg $tgt -}}
-		<pre><a href={{- $pg.Permalink -}}>
-			{{- delimit $pfx "&emsp;" }}└ {{ lower $pg.Title -}}
-		</a></pre>
+		<pre>{{- delimit $pfx "&emsp;" }}└ <a href={{- $pg.Permalink -}}>{{ lower $pg.Title -}}</a></pre>
 	{{- end -}}
 
 {{- else -}}
 
 	{{- if gt $pg.Params.depth 0 -}}
-		<pre><a href={{- $pg.Permalink -}}>
-			{{- delimit $pfx "&emsp;" }}{{ $pt }} {{ lower $pg.Title -}}
-		</a></pre>
+		<pre>{{- delimit $pfx "&emsp;" }}{{ $pt }} <a href={{- $pg.Permalink -}}>{{ lower $pg.Title -}}</a></pre>
 		{{- if eq $pt "└" -}}
 			{{- $pfx = $pfx | append "  " -}}
 		{{- else -}}
 			{{- $pfx = $pfx | append $pfx "│ " -}}
 		{{- end -}}
 	{{- else -}}
-		<a href={{- $pg.Permalink -}}>
-			<pre>{{- lower $pg.Title -}}</pre>
-		</a>
+		<a href={{- $pg.Permalink -}}>{{- lower $pg.Title -}}</a>
 	{{- end -}}
 
 	{{- /**** first N-1 children ****/ -}}
