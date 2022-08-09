@@ -1,0 +1,52 @@
+{{- /**** argparse ****/ -}}
+{{- $tgt := index . 3 -}} {{- /* target page */ -}}
+{{- $pt := index . 2 -}} {{- /* pipe type */ -}}
+{{- $pfx := index . 1 -}} {{- /* prefix */ -}}
+{{- $pg := index . 0 -}} {{- /* current page */ -}}
+{{- $children := $pg.Pages -}}
+
+{{- /**** 0 children (content page) ****/ -}}
+{{- if eq (len $children) 0 -}}
+	{{- if eq $pg $tgt -}}
+		<pre><a href={{- $pg.Permalink -}}>
+			{{- delimit $pfx "&emsp;" }}└ {{ lower $pg.Title -}}
+		</a></pre>
+	{{- end -}}
+
+{{- else -}}
+
+	{{- if gt $pg.Params.depth 0 -}}
+		<pre><a href={{- $pg.Permalink -}}>
+			{{- delimit $pfx "&emsp;" }}{{ $pt }} {{ lower $pg.Title -}}
+		</a></pre>
+		{{- if eq $pt "└" -}}
+			{{- $pfx = $pfx | append "  " -}}
+		{{- else -}}
+			{{- $pfx = $pfx | append $pfx "│ " -}}
+		{{- end -}}
+	{{- else -}}
+		<a href={{- $pg.Permalink -}}>
+			<pre>{{- lower $pg.Title -}}</pre>
+		</a>
+	{{- end -}}
+
+	{{- /**** first N-1 children ****/ -}}
+	{{- if gt (len $children) 1 -}}
+		{{- range first (sub (len $children) 1) $children -}}
+			{{- $args := slice . $pfx "├" $tgt -}}
+			{{- $nxt := ( partial "treecursive.html" $args ) -}}
+			<li>{{- $nxt -}}</li>
+		{{- end -}}
+	{{- end -}}
+
+	{{- /**** Nth child ****/ -}}
+	{{- $lst := last 1 $children -}}
+	{{- $lst := index $children (sub (len $children) 1) -}}
+	{{- $args := slice $lst $pfx "└" $tgt -}}
+	{{- $nxt := ( partial "treecursive.html" $args ) -}}
+	<li>{{- $nxt -}}</li>
+{{- end -}}
+
+	
+
+

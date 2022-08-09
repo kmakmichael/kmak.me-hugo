@@ -1,5 +1,5 @@
 ---
-title: "kmak.me"
+title: "home"
 description: "welcome to my homepage"
 depth: 0
 ---

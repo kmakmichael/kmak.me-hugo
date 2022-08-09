@@ -118,12 +118,13 @@ div.logo a {
 ul.tree {
 	padding: 0;
 	line-height: 100%;
-	list-style: none;
 }
-ul.tree li{
+ul.tree li, pre{
 	margin: 0;
+	padding: 0;
 	line-height: 100%;
 	list-style: none;
+	white-space: break-spaces;
 }
 
 
