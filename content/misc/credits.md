@@ -13,6 +13,6 @@ depth: 1
 - [DEC Terminal Modern](http://luc.devroye.org/fonts-80755.html)
 - [Libertinus Serif Display](https://github.com/alerque/libertinus)
 
-### Static Site Gen
+### Tools:
 - [Hugo](https://gohugo.io/)
 - [Retrolog.io](https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/)

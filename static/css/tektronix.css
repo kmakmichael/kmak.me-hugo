@@ -55,7 +55,7 @@ a {
 	text-decoration: none;
 }
 
-p, ul, li {
+ul, li {
 	margin: 2px;
 	line-height: 110%;
 	font-size: 13pt;
@@ -131,6 +131,7 @@ ul.tree {
 
 div.title {
 	display: flex;
+	gap: 20vw;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: flex-end;
