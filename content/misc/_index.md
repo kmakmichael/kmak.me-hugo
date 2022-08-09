@@ -1,6 +1,6 @@
 ---
 title: "misc"
-description: ""
+description: "whatever doesn't fit elsewhere"
 depth: 1
 ---
 
