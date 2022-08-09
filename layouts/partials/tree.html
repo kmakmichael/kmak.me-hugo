@@ -2,7 +2,7 @@
 	{{ $.Scratch.Set "idx" 1}}
 	<ul class="tree"><a href="/">home</a>
 	{{ range .Site.Sections }}
-		<li class = "tree">
+		<li>
 			{{ strings.Repeat (sub .Params.depth 1) "┃ " }}
 			{{ if eq ($.Scratch.Get "idx") (len $.Site.Sections) }}
 				└
@@ -12,7 +12,7 @@
 			<a href={{.Permalink}}> {{ lower .Title }}</a>	
 		</li>
 		{{if eq . $.Parent}}
-		<li class = "tree">
+		<li>
 			{{ strings.Repeat .Params.depth "│ " }}
 			<a href={{$.Permalink}}>└ {{ lower $.Title }}</a>
 		</li>
