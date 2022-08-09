@@ -6,7 +6,7 @@ depth: 1
 
 ### Aesthetics:
 - [Tektronix 4012](https://youtu.be/YZsiR45tKKw)
-- [mm4rk3t](https://mm4rk3t.neocities.org/home.html)
+- [mm4rk3t](https://mm4rk3t.neocities.org/)
 - [tohya.net](https://www.tohya.net/)
 	
 ### Resources:
