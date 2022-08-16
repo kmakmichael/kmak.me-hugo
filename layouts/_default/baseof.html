@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang={{ .Site.LanguageCode }}>
-<!-- head partial -->
-{{ partial "head.html" . }}
-<!-- end -->
+	{{ partial "head.html" . }}
     <body class="flexxy">
 		<div class="sidebar box">
 			<div class="logo">
 				<a href="/">KMAK</a>
 			</div>
 			<br />
-<!-- tree partial -->
-{{ partial "tree.html" . }}
-<!-- end -->
+			{{ partial "tree.html" . }}
 		</div>
 		<div class="content box">
-<!-- header partial -->
-{{ partial "header.html" . }}
-<!-- end -->
+			{{ partial "header.html" . }}
 			<hr />
-<!-- content partial -->
-{{ block "main" . }}{{ end }}
-<!-- end -->
-
+			{{ block "main" . }}{{ end }}
 		</div>
     </body>
 </html>
