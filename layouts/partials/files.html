@@ -2,8 +2,17 @@
 {{ range .Resources }}
 	{{ $f := os.Stat .RelPermalink }}
 	{{ $sz := ( div (float $f.Size) 1048576.0 ) }}
+	{{ $th := .Fill "50x50 smart jpg" }}
 	<div class="file box">
-		<h1>{{ $f.Name }}</h1>
-		<h2>{{ printf "%0.2fM" $sz }}</h2>
+		<div class="file l">
+			<img class="box" src="{{ $th.RelPermalink }}"></img>
+			<div>
+				<h1>{{ $f.Name }}</h1>
+			</div>
+		</div>
+		<div class="file r">
+			<h2>{{ printf "%0.2fM" $sz }}</h2>
+			<a class="dl" href="{{ .RelPermalink }}">💾</a> <!-- todo: better floppy or arrow. box class? -->
+		</div>
 	</div>
 {{ end }}
