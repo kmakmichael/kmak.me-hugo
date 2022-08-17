@@ -1,6 +1,7 @@
 :root {
 	--tek: #09F477;
 	--glow: #07C661;
+	--boxglow: #058741;
 	--bg: #1e241e;
 }
 
@@ -83,7 +84,7 @@ hr {
 .box {
 	border: 1.25px solid var(--tek);
 	border-radius: 2.5px;
-	box-shadow: 0px 0px 9px 0px var(--glow) inset, 0px 0px 9px 0px var(--glow);
+	box-shadow: 0px 0px 9px 0px var(--boxglow) inset, 0px 0px 9px 0px var(--boxglow);
 }
 
 
