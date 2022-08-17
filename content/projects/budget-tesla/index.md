@@ -32,10 +32,3 @@ I also worked on the administrative code.
 This module, dubbed BT Admin, took data from the input sensors and gave commands to the output sensors.
 A small script was made to help the other modules easily connect to the admin's Unix sockets.
 The current implementation is a simple state machine that tells the brakes to trigger if any of the three input systems report negatively.
-
-## Gallery
-
-
-
-## Files
-
