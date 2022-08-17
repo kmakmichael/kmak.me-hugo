@@ -1,6 +1,9 @@
 <hr />
-<ul>
 {{ range .Resources }}
-	<li>{{ .Name }}</li>
+	{{ $f := os.Stat .RelPermalink }}
+	{{ $sz := ( div (float $f.Size) 1048576.0 ) }}
+	<div class="file box">
+		<h1>{{ $f.Name }}</h1>
+		<h2>{{ printf "%0.2fM" $sz }}</h2>
+	</div>
 {{ end }}
-</ul>
