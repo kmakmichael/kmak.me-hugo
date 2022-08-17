@@ -1,6 +1,6 @@
 {{ define "main" }}
 	{{.Content}}
-	{{ with .Resources }}
-		{{ partial "files.html" }}
+	{{ if .Resources}}
+		{{ partial "files.html" . }}
 	{{ end }}
 {{ end }}
