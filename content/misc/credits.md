@@ -10,7 +10,7 @@ depth: 1
 - [tohya.net](https://www.tohya.net/)
 	
 ### Resources:
-- [DEC Terminal Modern](http://luc.devroye.org/fonts-80755.html)
+- [Cutive Mono](https://fonts.google.com/specimen/Cutive+Mono)
 - [Libertinus Serif Display](https://github.com/alerque/libertinus)
 
 ### Tools:

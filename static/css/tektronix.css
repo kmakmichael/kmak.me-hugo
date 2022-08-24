@@ -6,12 +6,12 @@
 }
 
 @font-face {
-	font-family: 'body'; /* */
+	font-family: 'body'; /* Cutive Mono */
 	src: url('/font/CutiveMono-Regular.ttf');
 }
 @font-face {
 	font-family: 'logo';
-	src: url('/font/libby.woff2'); /*  */
+	src: url('/font/libby.woff2'); /* Libertinus Serif Display */
 }
 /*
 @font-face {
