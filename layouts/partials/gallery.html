@@ -1,0 +1,13 @@
+<div class="gallery">
+{{ range . }}
+	{{ $f := os.Stat .RelPermalink }}
+	{{ $sz := ( div (float $f.Size) 1048576.0 ) }}
+	{{ $th := .Fill "128x128 smart jpg" }}
+	<a href="{{ .RelPermalink }}">
+		<figure class="gentry">
+			<img class="box" src="{{ $th.RelPermalink }}"></img>
+			<figcaption>{{ $f.Name }}</figcaption>
+		</figure>
+	</a>
+{{ end }}
+</div>

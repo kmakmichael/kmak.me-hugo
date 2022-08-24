@@ -1,6 +1,16 @@
 {{ define "main" }}
 	{{.Content}}
-	{{ if .Resources}}
-		{{ partial "files.html" . }}
+	{{ with .Resources.GetMatch "about.md" }}
+		<h2>About</h2>
+		{{ .Content }}
+	{{ end }}
+	{{ with .Resources.Match "media/*" }}
+		<h2>Gallery</h2>
+		{{ partial "gallery.html" . }}
+	{{ end }}	
+	{{ with .Resources.Match "files/*" }}
+		<h2>Files</h2>
+		<!-- absent until we fix this partial lol -->
+		{{/* partial "files.html" . */}}
 	{{ end }}
 {{ end }}
