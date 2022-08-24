@@ -11,7 +11,7 @@ depth: 1
 	
 ### Resources:
 - [Cutive Mono](https://fonts.google.com/specimen/Cutive+Mono)
-- [Libertinus Serif Display](https://github.com/alerque/libertinus)
+- [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond)
 
 ### Tools:
 - [Hugo](https://gohugo.io/)

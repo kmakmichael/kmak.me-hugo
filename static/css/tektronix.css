@@ -11,14 +11,8 @@
 }
 @font-face {
 	font-family: 'logo';
-	src: url('/font/libby.woff2'); /* Libertinus Serif Display */
+	src: url('/font/CormorantGaramond-Bold.ttf'); /* Cormorant Garamond */
 }
-/*
-@font-face {
-	font-family: 'code';
-	src: url('/font/hermit/hermit-light.woff2');
-}
-*/
 
 * {
 	font-family: 'body';
@@ -115,7 +109,6 @@ hr {
 
 .logo {
 	font-size: 3.5vw;
-	font-style: italic;
 	font-family: 'logo';
 	letter-spacing: 0px;
 	text-shadow: 0px 0px 18px var(--glow) inset;
