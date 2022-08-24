@@ -4,3 +4,4 @@ title = 'Michael Kmak'
 
 disableKinds = ["sitemap", "RSS", "robotsTXT", "taxonomy", "term"]
 disableHugoGeneratorInject = true
+publishDir = "/var/www/htdocs"
