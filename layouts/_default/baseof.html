@@ -12,7 +12,9 @@
 		<div class="content box">
 			{{ partial "header.html" . }}
 			<hr />
-			{{ block "main" . }}{{ end }}
+			<div class="main">
+				{{ block "main" . }}{{ end }}
+			</div>
 		</div>
     </body>
 </html>

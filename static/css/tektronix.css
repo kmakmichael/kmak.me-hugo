@@ -6,17 +6,23 @@
 }
 
 @font-face {
-	font-family: 'bodyfont'; /* DEC Terminal Modern */
-	src: url('/font/decterm.ttf');
+	font-family: 'body'; /* */
+	src: url('/font/CutiveMono-Regular.ttf');
 }
 @font-face {
-	font-family: 'logofont';
-	src: url('/font/libby.woff2'); /* Libertinus Serif Display */
+	font-family: 'logo';
+	src: url('/font/libby.woff2'); /*  */
 }
+/*
+@font-face {
+	font-family: 'code';
+	src: url('/font/hermit/hermit-light.woff2');
+}
+*/
 
 * {
-	font-family: 'bodyfont';
-	letter-spacing: 0.75px;
+	font-family: 'body';
+	letter-spacing: -1px;
 	text-shadow: 0px 0px 18px var(--glow);
 	color: var(--tek);
 }
@@ -91,11 +97,11 @@ hr {
 /**** Sidebar ****/
 
 .sidebar {
-	flex: 0 0 auto;
+	flex: 1 0 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: baseline;
+	align-items: center;
 	flex-wrap: nowrap;
 }
 
@@ -106,7 +112,7 @@ div.logo {
 }
 
 div.logo a {
-	font-family: 'logofont';
+	font-family: 'logo';
 	font-style: italic;
 	letter-spacing: 0px;
 	text-decoration: none;
@@ -117,6 +123,9 @@ div.logo a {
 
 
 /**** Tree ****/
+ul.tree * {
+	letter-spacing: -1.5px;
+}
 
 ul.tree {
 	padding: 0;
@@ -145,16 +154,26 @@ div.header {
 	align-items: flex-end;
 }
 
-div.title {
+h1.title {
 	flex: 1 1 50%;
 }
 
-div.subtitle {
+h4.subtitle {
 	flex: 1 1 50%;
+}
+
+div.main {
+	padding-top: 20px;
+	padding-inline: 40px;
 }
 
 
 /**** Files Section ****/
+/*
+div.file * {
+	font-family: 'code';
+}
+*/
 
 div.file {
 	margin-block: 10px;
