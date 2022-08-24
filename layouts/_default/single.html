@@ -10,7 +10,6 @@
 	{{ end }}	
 	{{ with .Resources.Match "files/*" }}
 		<h2>Files</h2>
-		<!-- absent until we fix this partial lol -->
-		{{/* partial "files.html" . */}}
+		{{ partial "files.html" . }}
 	{{ end }}
 {{ end }}

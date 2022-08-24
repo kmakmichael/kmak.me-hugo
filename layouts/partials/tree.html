@@ -1,6 +1,6 @@
 <div class="tree">
-	<span><ul class="tree">
+	<ul class="tree">
 		{{ $args := slice .Site.Home (slice) "" . }}
 		{{- partial "treecursive.html" $args -}}
-	</ul></span>
+	</ul>
 </div>

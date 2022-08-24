@@ -3,18 +3,16 @@
 	{{ partial "head.html" . }}
     <body class="flexxy">
 		<div class="sidebar box">
-			<div class="logo">
-				<center><a href="/">KMAK</a></center>
-			</div>
+				<center><a class="logo" href="/">KMAK</a></center>
 			<br />
 			{{ partial "tree.html" . }}
 		</div>
 		<div class="content box">
 			{{ partial "header.html" . }}
 			<hr />
-			<div class="main">
+			<span class="main">
 				{{ block "main" . }}{{ end }}
-			</div>
+			</span>
 		</div>
     </body>
 </html>
