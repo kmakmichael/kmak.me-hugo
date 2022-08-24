@@ -3,25 +3,25 @@
 {{- $pt := index . 2 -}} {{- /* pipe type */ -}}
 {{- $pfx := index . 1 -}} {{- /* prefix */ -}}
 {{- $pg := index . 0 -}} {{- /* current page */ -}}
-{{- $children := $pg.Pages -}}
+{{- $children := $pg.Pages.ByTitle -}}
 
 {{- /**** 0 children (content page) ****/ -}}
 {{- if eq (len $children) 0 -}}
 	{{- if eq $pg $tgt -}}
-		<pre>{{- delimit $pfx "&emsp;" }}└ <a href={{- $pg.Permalink -}}>{{ lower $pg.Title -}}</a></pre>
+		<pre>{{- delimit $pfx "&emsp;" }}└ <a href={{- $pg.Permalink -}}>{{ (index (last 2 (split $pg.RelPermalink "/")) 0) -}}</a></pre>
 	{{- end -}}
 
 {{- else -}}
 
 	{{- if gt $pg.Params.depth 0 -}}
-		<pre>{{- delimit $pfx "&emsp;" }}{{ $pt }} <a href={{- $pg.Permalink -}}>{{ lower $pg.Title -}}</a></pre>
+		<pre>{{- delimit $pfx "&emsp;" }}{{ $pt }} <a href={{- $pg.Permalink -}}>{{ (index (last 2 (split $pg.RelPermalink "/")) 0) -}}</a></pre>
 		{{- if eq $pt "└" -}}
 			{{- $pfx = $pfx | append "  " -}}
 		{{- else -}}
 			{{- $pfx = $pfx | append $pfx "│ " -}}
 		{{- end -}}
 	{{- else -}}
-		<a href={{- $pg.Permalink -}}>{{- lower $pg.Title -}}</a>
+		<a href={{- $pg.Permalink -}}>home</a>
 	{{- end -}}
 
 	{{- /**** first N-1 children ****/ -}}
