@@ -13,6 +13,10 @@
 	font-family: 'logo';
 	src: url('/font/CormorantGaramond-Bold.ttf'); /* Cormorant Garamond */
 }
+@font-face {
+	font-family: 'mono';
+	src: url('/font/apl385.ttf');
+}
 
 * {
 	font-family: 'body';
@@ -57,6 +61,7 @@ a.box:hover {
 }
 
 a {
+	font-family: 'mono';
 	text-decoration: none;
 }
 
