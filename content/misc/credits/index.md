@@ -12,6 +12,7 @@ depth: 1
 ### Resources:
 - [Cutive Mono](https://fonts.google.com/specimen/Cutive+Mono)
 - [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond)
+- [APL385](https://www.apl385.com/fonts/)
 
 ### Tools:
 - [Hugo](https://gohugo.io/)

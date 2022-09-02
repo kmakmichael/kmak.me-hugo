@@ -15,7 +15,7 @@
 }
 @font-face {
 	font-family: 'mono';
-	src: url('/font/apl385.ttf');
+	src: url('/font/apl385.ttf'); /* APL385 */
 }
 
 * {
