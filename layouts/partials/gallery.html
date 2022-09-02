@@ -1,7 +1,6 @@
 <div class="gallery">
-{{ range . }}
+{{ range .ByType "image" }}
 	{{ $f := os.Stat .RelPermalink }}
-	{{ $sz := ( div (float $f.Size) 1048576.0 ) }}
 	{{ $th := .Fill "128x128 smart jpg" }}
 	<a href="{{ .RelPermalink }}">
 		<figure class="gentry">
@@ -9,5 +8,8 @@
 			<figcaption>{{ $f.Name }}</figcaption>
 		</figure>
 	</a>
+{{ end }}
+{{ range .ByType "video" }}
+	{{/* ideally make thumbnails but i can't figure out how */}}
 {{ end }}
 </div>
