@@ -1,6 +1,6 @@
 ---
 title: "credits"
-description: "Things that contributed to the creation of this site"
+description: "acknowledgements & citations"
 depth: 1
 ---
 
