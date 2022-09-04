@@ -68,7 +68,8 @@ a {
 ul, li {
 	margin: 2px;
 	line-height: 110%;
-	font-size: 13pt;
+	font-size: 1.3rem;
+	list-style-type: "";
 }
 
 hr {
@@ -113,7 +114,7 @@ hr {
 /**** Logo ****/
 
 .logo {
-	font-size: 3.5vw;
+	font-size: 3.75vw;
 	font-family: 'logo';
 	letter-spacing: 0px;
 	text-shadow: 0px 0px 18px var(--glow) inset;
@@ -122,8 +123,7 @@ hr {
 
 /**** Tree ****/
 ul.tree * {
-	font-size: 1vw;
-	letter-spacing: -1.5px;
+	font-size: 1.2vw;
 }
 
 ul.tree {
@@ -168,9 +168,11 @@ h4.subtitle {
 }
 
 .main p {
+	font-size: 1.25rem;
+	padding-block: 9px;
 	padding-inline: 40px;
 	text-indent: 24pt;
-	line-height: 120%;
+	line-height: 140%;
 	margin: 0px;
 }
 
@@ -238,7 +240,7 @@ div.file * {
 }
 
 .file h1 {
-	font-size: 18px;
+	font-size: 1.3rem;
 }
 
 .file:hover h1 {
