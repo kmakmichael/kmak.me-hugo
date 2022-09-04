@@ -1,12 +1,12 @@
 ---
-title: "home"
-description: "welcome to my homepage"
+title: ""
+description: ""
 depth: 0
 ---
 
 This mostly serves as an online portfolio.
 Most of the content here is under [projects/](/projects), where you'll find short descriptions, pictures, and videos for some of the more notable things I've done.
-[misc/](/misc) has some acknowledgements, mad ramblings, and a bit about me.
+[misc/](/misc) has some acknowledgements and an about page.
 We're still under construction here, I just haven't chosen the right web-friendly gif to express this.
 Use the tree to explore.
 
