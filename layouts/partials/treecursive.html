@@ -7,9 +7,7 @@
 
 {{- /**** 0 children (content page) ****/ -}}
 {{- if eq (len $children) 0 -}}
-	{{- if eq $pg $tgt -}}
-		<pre>{{- delimit $pfx "&emsp;" }}└ <a href={{- $pg.Permalink -}}>{{ (index (last 2 (split $pg.RelPermalink "/")) 0) -}}</a></pre>
-	{{- end -}}
+	<pre>{{- delimit $pfx "&emsp;" }}└ <a href={{- $pg.Permalink -}}>{{ (index (last 2 (split $pg.RelPermalink "/")) 0) -}}</a></pre>
 
 {{- else -}}
 
