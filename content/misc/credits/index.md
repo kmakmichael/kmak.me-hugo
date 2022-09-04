@@ -4,12 +4,12 @@ description: "acknowledgements & citations"
 depth: 1
 ---
 
-### Aesthetics:
+### Design Inspiration:
 - [Tektronix 4012](https://youtu.be/YZsiR45tKKw)
 - [mm4rk3t](https://mm4rk3t.neocities.org/)
 - [tohya.net](https://www.tohya.net/)
 	
-### Resources:
+### Fonts:
 - [Cutive Mono](https://fonts.google.com/specimen/Cutive+Mono)
 - [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond)
 - [APL385](https://www.apl385.com/fonts/)
