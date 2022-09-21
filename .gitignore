@@ -1,3 +1,15 @@
 .hugo_build.lock
 public/
 resources/
+
+# media folders
+**/media/
+**/files/
+
+# media types
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.webm
+*.pdf
