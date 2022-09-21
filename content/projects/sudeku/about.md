@@ -9,5 +9,3 @@ To save space, pixels are represented by a 3-bit color code, which is exchanged 
 None of us had both a VGA monitor and PS/2 keyboard, so quarantine ended up preventing us from getting together and testing the system as a whole.
 We could at least confirm that the display works with the game logic and the game logic works with the keyboard.
 More details can be found in our report, found under the Files section.
-
-(pictures will be here, i need to look through my old phone)
