@@ -1,16 +1,13 @@
 ---
 title: "about"
-description: "mad ramblings on web design"
+description: "a bit about me & the site"
 depth: 2
 ---
 ## The Person
 
-It's hard to talk about myself, I'll have to expand on this later.
-
-The gist of it is that I'm a stupid kid trying to learn how to be less stupid.
-The challenges of post-college adulthood are many, but I'm as ready as I'll ever be.
-I've done some programming, some artsy stuff, even some sports.
 Stagnation is boring, so I'd like to keep learning and doing in whatever future I pursue.
+Not sure exactly what I want to do yet, but I have some time to figure it out.
+I’ve done some programming, some artsy stuff, some sports.
 
 ## The Website
 
