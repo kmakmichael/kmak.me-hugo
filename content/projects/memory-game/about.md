@@ -6,4 +6,3 @@ Whatever assets aren't listed [here](https://github.com/kmakmichael/memory_game/
 Tried to find assets that were licensed for unrestricted use; I wouldn't want to worry about legal stuff for a school project.
 
 Play the current version [here](https://play.unity.com/mg/other/webgl-builds-166302).
-(I'll add some screenshots too, remind me later)
