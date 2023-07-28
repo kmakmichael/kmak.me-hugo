@@ -3,7 +3,7 @@ title: "about"
 description: "a bit about the site & the author"
 depth: 2
 ---
-### About Me
+## About Me
 The standard self-indulgent boasting and hirability metrics are already on my resume and LinkedIn page, so I'd like to make this a bit more casual and personal.
 I see a lot of value in experiences.
 If you take the time to look around and live in the world around you, there's a lot to discover and enjoy.
@@ -56,7 +56,7 @@ Cooking's the kinda thing where you can just put a pot of tried-and-true comfort
 And don't get me started on mochi, I could spend all day pounding that stuff.
 
 
-### About the Site
+## About the Site
 I like simple things.
 Take it easy, content first, minimal distractions, soft on the eyes and brain.
 I've tried to build this website accordingly, though I'm no artist or web wizard.
