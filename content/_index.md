@@ -1,6 +1,6 @@
 ---
 title: "home"
-description: "Michael Kmak's Portfolio"
+description: "Michael Kmak's portfolio"
 depth: 0
 ---
 
