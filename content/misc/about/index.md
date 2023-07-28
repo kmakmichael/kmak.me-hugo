@@ -1,15 +1,8 @@
 ---
 title: "about"
-description: "a bit about me & the site"
+description: "a bit about the site"
 depth: 2
 ---
-## The Person
-
-Stagnation is boring, so I'd like to keep learning and doing in whatever future I pursue.
-Not sure exactly what I want to do yet, but I have some time to figure it out.
-I’ve done some programming, some artsy stuff, some sports.
-
-## The Website
 
 I like simple things.
 Content first, minimal distractions, easy on the eyes and brain.
